@@ -1,0 +1,42 @@
+.sign{
+    padding: 100px 0;
+    &__wrapper{
+        text-align: center;
+    }
+    &__title{
+        font-size: 40px;
+        letter-spacing: -2px;
+        color: $bj-py;
+        font-family: Commons_ExtraBold;
+    }
+    &__desc{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    &__btn {
+        color: #FFF;
+        background: $bj-py;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.1;
+        padding: 20px 40px;
+        border-radius: 2px;
+        transition: box-shadow .3s ease-in-out;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    &__btn:hover{
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+}
+@media (max-width: 500px){
+    .sign{
+        &__title{
+            font-size: 32px;
+        }
+        &__desc{
+            font-size: 14px;
+        }
+    }
+}

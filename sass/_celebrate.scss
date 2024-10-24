@@ -1,0 +1,183 @@
+.celebrate {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px;
+    }
+
+    &__watch-title {
+        h2 {
+            font-size: 32px;
+            color: $bj-py;
+            margin-bottom: 20px;
+            font-weight: 400;
+
+            span {
+                text-transform: uppercase;
+                font-size: 11px;
+                letter-spacing: 1px;
+                color: #6f6f6f;
+                margin-left: 10px;
+                font-weight: bold;
+            }
+        }
+
+        hr {
+            border: 1px solid black;
+        }
+    }
+
+    &__watch-card {
+        display: flex;
+        gap: 50px;
+        margin-top: 60px;
+
+        div:nth-child(3) {
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    &__watch-img {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        background-color: #000;
+        color: #fcdc00;
+        border-radius: 50%;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__watch-title {
+        font-size: 26px;
+        color: $bj-py;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    &__watch-desc {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__watch-btn {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        padding: 17px 50px;
+        border-radius: 2px;
+        background: $bj-py;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        transition: box-shadow .3s ease-in-out;
+        margin: 0 0 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    &__watch-btn:hover{
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+
+    &__more-card {
+        background-image: url(../assets/image-res.img.aba32e09-2d64-4861-9e94-dbbf86c31232.jpg);
+        background-size: cover;
+        height: 284px;
+        padding: 40px;
+        border-top: 15px solid #000;
+        margin-bottom: 40px;
+        div {
+            display: flex;
+            justify-content: end;
+        }
+    }
+    &__more-card:nth-child(3){
+        background-image: url(../assets/image-res.img.ede81306-ed80-4d24-a144-a96b88f61f77.jpg);
+    }
+    &__more-card:nth-child(4){
+        background-image: url(../assets/image-res.img.bb915423-d79e-4e04-bf01-0760bdfec7eb.jpg);
+    }
+
+    &__more-title {
+        font-family: Commons_ExtraBold;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0) 100%);
+        color: #fff;
+        display: inline;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -1px;
+        width: 100%;
+    }
+
+    &__more-btn {
+        color: #000;
+        background: #fff;
+        border: 3px solid #000;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1;
+        padding: 15px 50px;
+        border-radius: 2px;
+        transition: box-shadow .3s ease-in-out;
+        margin-top: 40px;
+        margin-right: 40px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    &__more-btn:hover{
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+}
+@media (max-width: 1200px) {
+    .celebrate{
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__watch-card {
+            div:nth-child(3) {
+                justify-content: flex-start;
+            }
+        }
+}
+}
+@media (max-width: 500px) {
+    .celebrate{
+        &__watch-card{
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            grid-gap: 40px;
+            div:nth-child(3) {
+                justify-content: center;
+            }
+        }
+        &__more-wrapper{
+            text-align: center;
+        }
+        &__more-card{
+            padding: 10px;
+            div{
+                justify-content: center;
+                align-items: center;
+                button{
+                    margin-right: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+        &__more-title{
+            font-size: 44px;
+        }
+        &__watch-title{
+            text-align: center;
+            span{
+                display: block;
+            }
+        }
+    }
+}
